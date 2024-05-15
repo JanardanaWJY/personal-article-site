@@ -1,0 +1,40 @@
+*{
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .scrollbar::-webkit-scrollbar-track {
+      border-radius: 100vh;
+      background: #f4f4f4;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: #d8d8d8;
+      border-radius: 100vh;
+      border: 3px solid #f4f4f4;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #d1cfcf;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .scrollbar::-webkit-scrollbar {
+        width: 5px;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        border: 0.2px solid #f4f4f4;
+    }
+}
+
+/* Header */
+
+/* Body */
+
+/* Footer */

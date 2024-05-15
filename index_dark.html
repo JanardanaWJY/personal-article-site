@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index_dark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                Roboto: ["Roboto"],
+                RobotoSlab: ["Roboto Slab"]
+              }
+            }
+          }
+        }
+      </script>
+    <title>Indra's Articles Website</title>
+</head>
+<body>
+    <!-- Header -->
+    <section class="header-container fixed z-50 w-full border-b-4 border-white bg-[#1a1f33]">
+        <div class="header-content flex justify-between mx-auto py-[1vw] w-[80%] text-white">
+            <div class="left-content flex justify-between gap-[2vw] items-center md:gap-[1.5vw] lg:gap-[1vw]">
+                <div class="navbar-logo w-[8vw] md:w-[6vw] lg:w-[4vw]">
+                    <img src="Assets/Unud.png" alt="Navbar Logo">
+                </div>
+                <div class="navbar-title flex flex-col">
+                    <div class="text-[3vw] font-RobotoSlab font-bold text-center md:text-[2.5vw] lg:text-[1.8vw]">Indra's Articles</div>
+                    <div class="text-[2vw] font-RobotoSlab font-light text-center tracking-[0.1vw] md:text-[1.5vw] md:tracking-[0.15vw] lg:text-[1vw] lg:tracking-[0.2vw]">Udayana University</div>
+                </div>
+            </div>
+            <div class="navbutton flex items-center">
+                <div class="font-Roboto font-bold text-[3vw] mr-[10vw] hover:text-[#5d6273] md:text-[2vw] md:mr-[5vw] lg:text-[1.5vw] lg:mr-[3vw] transition-all duration-[0.9s]"><a href="index_dark.html">Home</a></div>
+                <div class="font-Roboto font-bold text-[3vw] hover:text-[#5d6273] md:text-[2vw] lg:text-[1.5vw] transition-all duration-[0.9s]"><a href="index.html">Light</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- Body -->
+    <section class="body-container py-[14vw] md:py-[10vw] lg:py-[8vw] bg-[#1a1f33]">
+        <div class="title-articles w-[80%] mx-auto font-Roboto font-bold text-[6vw] border-b-[2px] border-[#4c5072] mb-[4vw] md:mb-[2vw] md:text-[4.5vw] lg:text-[3.75vw] text-white">About Me</div>
+        <div class="author-info flex flex-col md:flex-row md:justify-between md:gap-[8%] lg:gap-[10%] w-[80%] mx-auto text-white">
+            <div class="detail-info order-last md:order-first md:w-[51%] lg:w-[50%]">
+                <div class="name font-RobotoSlab font-bold text-center md:text-start text-[6vw] mt-[3vw] md:mt-0 md:text-[2.9vw]">I Wayan Indra Aditya Shika</div>
+                <div class="major font-regular font-RobotoSlab text-[3.2vw] w-[75vw] rounded-sm mx-auto md:mx-0 md:text-[1.5vw] md:w-[36vw] lg:text-[1.3vw] bg-[#4c5072] lg:w-[31vw] text-center md:rounded-md">Bachelor Student of Environmental Engineering</div>
+                <div class="detail font-light font-RobotoSlab text-[3.6vw] mt-[3.5vw] text-center md:text-start md:text-[1.7vw] md:mt-[1.7vw] lg:text-[1.5vw] lg:mt-[1.5vw]">A student of environmental engineering with a high interest in environmental research and new renewable energy. Experienced as an assistant lecturer for basic chemistry, assisting in the preparation of <em>Upaya Pengelolaan Lingkungan</em> and <em>Upaya Pemantauan Lingkungan Hidup</em> (UKL-UPL) documents, Technical Agreement for Hazardous and Toxic Waste (B3), and Technical Emission Standards.</div>
+            </div>
+            <div class="profile-picture w-[70%] mx-auto md:mx-0 md:w-[41%] lg:w-[40%]"><img src="Assets/anonymous.png" alt="author profile picture" class="rounded-xl shadow-md"></div>
+        </div>
+        <div class="Articles mt-[20vw] md:mt-[10vw] lg:mt-[8vw] w-[80%] mx-auto text-white">
+            <div class="title-articles font-Roboto font-bold text-[6vw] border-b-[2px] border-[#4c5072] mb-[4vw] md:mb-[2vw] md:text-[4.5vw] lg:text-[3.75vw]">My Articles</div>
+            <div class="cards flex flex-col overflow-y-auto h-[700px] overscroll-auto scrollbar">
+                <div class="card border-[#4c5072] border-[2px] rounded-lg w-full my-[3vw] md:my-[2vw] lg:my-[1vw] p-[2vw] md:p-[1.2vw] lg:p-[1vw] shadow-md hover:bg-[#29304b] transition duration-[0.9s]">
+                    <a href="article_dark.html" class="flex flex-col md:flex-row">
+                        <div class="article-illustration w-[100%] mx-auto md:mx-0 md:w-[30%] md:pr-[1vw] md:border-r-[2px] border-[#4c5072]">
+                            <img src="Assets/article.jpg" alt="Sampah" class="rounded-lg">
+                        </div>
+                        <div class="article-desc w-[100%] md:w-[70%] md:ml-[1vw]">
+                            <div class="font-bold text-center text-[3.8vw] mb-[3vw] md:text-start md:text-[2.5vw] lg:text-[2vw] font-RobotoSlab md:mb-[1.5vw] lg:mb-[1vw]">PENERAPAN ESG <em>(ENVIRONMENT, SOCIAL, AND
+                                GOVERNANCE)</em> PADA PT TRIPUTRA AGRO PERSADA</div>
+                            <div class="bg-[#4c5072] text-[2.5vw] w-[30vw] rounded-sm mx-auto md:mx-0 md:text-[1.5vw] md:w-[18vw] lg:w-[12vw] lg:text-[1vw] font-RobotoSlab font-regular text-center">Published in 2023-03-09</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card border-[#4c5072] border-[2px] rounded-lg w-full my-[3vw] md:my-[2vw] lg:my-[1vw] p-[2vw] md:p-[1.2vw] lg:p-[1vw] shadow-md hover:bg-[#29304b] transition duration-[0.9s]">
+                    <a href="article_dark_2.html" class="flex flex-col md:flex-row">
+                        <div class="article-illustration w-[100%] mx-auto md:mx-0 md:w-[30%] md:pr-[1vw] md:border-r-[2px] border-[#4c5072]">
+                            <img src="Assets/article_2.jpg" alt="Sampah" class="rounded-lg">
+                        </div>
+                        <div class="article-desc w-[100%] md:w-[70%] md:ml-[1vw]">
+                            <div class="font-bold text-center text-[3.8vw] mb-[3vw] md:text-start md:text-[2.5vw] lg:text-[2vw] font-RobotoSlab md:mb-[1.5vw] lg:mb-[1vw]"><em>LAW OF THE RIGHTS OF MOTHER EARTH</em> SEBAGAI HUKUM
+                                DAN ACUAN KEBIJAKAN LINGKUNGAN DI BOLIVIA</div>
+                            <div class="bg-[#4c5072] text-[2.5vw] w-[30vw] rounded-sm mx-auto md:mx-0 md:text-[1.5vw] md:w-[18vw] lg:w-[12vw] lg:text-[1vw] font-RobotoSlab font-regular text-center">Published in 2023-03-09</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-container bg-[#121724]">
+        <div class="footer-content mx-auto w-[80%] text-white py-[6vw] md:py-[3vw] lg:py-[2vw]">
+            <div class="footer-logo flex flex-col my-[5vw]">
+                <div class="f-logo w-[25vw] mx-auto md:w-[20vw] lg:w-[10vw]">
+                    <img src="Assets/Unud.png" alt="Footer Logo">
+                </div>
+                <div class="f-title flex flex-col">
+                    <div class="text-[6vw] font-RobotoSlab font-bold text-center mt-[2vw] md:text-[5vw] md:mt-[1vw] lg:mt-[0.5vw] lg:text-[3.5vw]">Indra's Articles</div>
+                    <div class="text-[3vw] font-RobotoSlab font-light text-center tracking-[0.7vw] md:text-[2.5vw] md:tracking-[0.6vw] lg:text-[1.5vw] lg:tracking-[0.5vw]">Udayana University</div>
+                </div>
+            </div>
+            <div class="font-Roboto font-thin text-center text-[2vw] md:text-[1.5vw] lg:text-[1vw]">©2023 Indra Aditya Shika. All Rights Reserved</div>
+            <div class="socmed flex justify-center items-center font-Roboto font-light mt-[6vw] md:justify-end">
+                <div class="hidden md:block md:mr-[2.5vw] md:text-[2vw] lg:text-[1.5vw] lg:mr-[2vw]">Contact me:</div>
+                <a class="w-[7vw] mr-[3vw] md:w-[3.5vw] md:mr-[1.5vw] lg:w-[3vw] lg:mr-[1vw]" href="https://www.linkedin.com/in/i-wayan-indra-aditya-shika-8271a2230/" target="_blank
+                "><img src="Assets/linkedin_white.png" alt="linkedin"></a>
+                <a class="w-[8.25vw] mr-[3vw] md:w-[4vw] md:mr-[1.5vw] lg:w-[3.5vw] lg:mr-[1vw]" href="https://www.instagram.com/indrashikaa/" target="_blank
+                "><img src="Assets/instagram_white.png" alt="instagram"></a>
+                <a class="w-[7vw] md:w-[3.5vw] lg:w-[3vw]" href="https://web.facebook.com/iwyn.shika?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank
+                "><img src="Assets/facebook_white.png" alt="facebook"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="index_dark.js"></script>
+</body>
+</html>
